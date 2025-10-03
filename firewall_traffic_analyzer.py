@@ -26,7 +26,7 @@ print(f'Port: {port_number}, Transfer Size: {dt_size} MB')
 if (port_number == 22 or port_number == 3389) and dt_size >= 100:
     print('Risk Assessment: HIGH RISK: Potential unauthorized remote access detected!')
 
-elif port_number == 80 and dt_size >= 100:
+elif port_number == 80 and dt_size > 100:
     print('Risk Assessment: MEDIUM RISK: Large unencrypted data transfer detected.')
 
 elif port_number == 443:
